@@ -18,7 +18,7 @@ trait ExceptionTrait
         return parent::render($request, $e);
     }
     protected function isModel($e){
-        return $e instanceof ModelNotFoundException;
+       return $e instanceof ModelNotFoundException;
     }
     protected function isHttp($e){
         return $e instanceof NotFoundHttpException;
